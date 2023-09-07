@@ -1,5 +1,5 @@
 
-g++ -c AssetManager.cpp StateMachine.cpp InputManager.cpp Game.cpp SplashState.cpp MainMenuState.cpp GameState.cpp main.cpp -I C:\SFML-2.6.0\include -I C:\Users\matlo\Desktop\Code23\Game-Template\Header 
+g++ -c AssetManager.cpp StateMachine.cpp InputManager.cpp Game.cpp SplashState.cpp MainMenuState.cpp GameState.cpp SpaceShip.cpp main.cpp -I C:\SFML-2.6.0\include -I C:\Users\matlo\Desktop\Code23\Game-Example\Header
 
-g++ AssetManager.o StateMachine.o Game.o InputManager.o SplashState.o MainMenuState.o GameState.o main.o  -o app -L C:\SFML-2.6.0\lib -lsfml-graphics -lsfml-window -lsfml-system
+g++ AssetManager.o StateMachine.o Game.o InputManager.o SplashState.o MainMenuState.o GameState.o SpaceShip.o main.o  -o app -L C:\SFML-2.6.0\lib -lsfml-graphics -lsfml-window -lsfml-system
 

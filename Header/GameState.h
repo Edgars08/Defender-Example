@@ -6,7 +6,7 @@
 #include "StateMachine.h"
 #include "InputManager.h"
 #include "Game.h"
-
+#include "SpaceShip.h"
 
 namespace Edgars
 {
@@ -23,9 +23,9 @@ namespace Edgars
     private:
         GameDataRef _data;
         sf::Sprite _background;
-
+        sf::Sprite _ship;
         // Objects
-    
+        SpaceShip *spaceShip;
     };
 }
 #endif

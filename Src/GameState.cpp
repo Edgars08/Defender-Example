@@ -18,6 +18,7 @@ namespace Edgars
         this->_background.setTexture(_data->assets.GetTexture("Background_Game"));
         this->_background.setScale(sf::Vector2f(1.50f, 1.55210643f));
         // OBJECT
+        this->spaceShip = new SpaceShip(_data);
     }
     void GameState::HandleInput()
     {
@@ -37,12 +38,14 @@ namespace Edgars
 
     void GameState::Update(float dt)
     {
+        this->spaceShip->update(dt);
     }
 
     void GameState::Draw(float dt)
     {
         _data->window.clear();
         _data->window.draw(_background);
+        this->spaceShip->draw();
         _data->window.display();
     }
 }
